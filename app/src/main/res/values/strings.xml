@@ -16,4 +16,6 @@
     <string name="tanca">Tanca</string>
     <string name="envia_hola_home_fragment">Envia Hola home fragment</string>
     <string name="envia_hola">Envia Hola</string>
+    <string name="descripcion">Descripcion</string>
+
 </resources>

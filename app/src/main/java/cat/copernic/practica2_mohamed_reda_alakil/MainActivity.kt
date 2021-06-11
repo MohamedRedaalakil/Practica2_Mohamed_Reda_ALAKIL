@@ -16,27 +16,21 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import cat.copernic.practica2_mohamed_reda_alakil.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-
-        setContentView(binding.root)
-
-
-
+        setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "App Mohamed Reda al akil", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
@@ -51,14 +45,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-
-
+        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
-
-
         return true
     }
-
+    /*
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         setContentView(R.layout.fragment_home)
         val textView : TextView = findViewById(R.id.textView)
@@ -66,13 +57,13 @@ class MainActivity : AppCompatActivity() {
             R.id.idNom -> Toast.makeText(this, "Mohamed Reda AL AKIL", Toast.LENGTH_SHORT).show()
             R.id.idEnvia -> { textView.text = "Hola" }
         }
-
-
         return super.onOptionsItemSelected(item)
-    }
+    } */
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
 }

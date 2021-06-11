@@ -22,10 +22,8 @@ class SlideshowFragment : Fragment() {
         slideshowViewModel =
                 ViewModelProvider(this).get(SlideshowViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_slideshow, container, false)
-        val textView: TextView = root.findViewById(R.id.text_slideshow)
-        slideshowViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
+        slideshowViewModel.text.observe(viewLifecycleOwner, Observer {})
         return root
     }
 }
