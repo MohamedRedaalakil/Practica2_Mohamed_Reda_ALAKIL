@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Practica2_Mohamed_Reda_ALAKIL</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="practica_2_uf1_m08">Practica 2 UF1 M08</string>
+    <string name="mohamed_reda_al_akil">Mohamed Reda AL AKIL</string>
+    <string name="nom">Nom</string>
+    <string name="tanca">Tanca</string>
+    <string name="envia_hola_home_fragment">Envia Hola home fragment</string>
+    <string name="envia_hola">Envia Hola</string>
+</resources>

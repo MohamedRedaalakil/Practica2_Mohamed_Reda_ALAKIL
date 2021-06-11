@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/idNom"
+        android:orderInCategory="100"
+        android:title="@string/nom"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/idEnvia"
+        android:orderInCategory="100"
+        android:title="@string/envia_hola"
+        app:showAsAction="never" />
+</menu>
